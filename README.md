@@ -35,8 +35,8 @@ Sistema completo de encuestas que permite:
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/laravel-plugthem-test-tu-nombre.git
-cd laravel-plugthem-test-tu-nombre
+git clone https://github.com/Edisonj4vier/laravel-plugthem-test-edison.git
+cd laravel-plugthem-test-edison
 ```
 
 ### 2. Instalar dependencias
