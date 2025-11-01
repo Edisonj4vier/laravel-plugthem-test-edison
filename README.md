@@ -637,15 +637,6 @@ php artisan app:survey-deactivate-inactive
 
 ---
 
-## 📞 Soporte y Contacto
-
-**Desarrollador:** [Tu Nombre]
-**Email:** tu-email@example.com
-**GitHub:** [@tu-usuario](https://github.com/tu-usuario)
-**LinkedIn:** [Tu Perfil](https://linkedin.com/in/tu-perfil)
-
----
-
 ## 📄 Licencia
 
 Este proyecto fue desarrollado como prueba técnica para **Plugthem**.
