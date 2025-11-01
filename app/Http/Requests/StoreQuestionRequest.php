@@ -5,7 +5,7 @@ namespace App\Http\Requests;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
 
-class UpdateSurveyRequest extends FormRequest
+class StoreQuestionRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -23,13 +23,11 @@ class UpdateSurveyRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'title' => 'sometimes|required|string|max:255',
-            'description' => 'sometimes|nullable|string',
-            'status' => [
-                'sometimes',
+            'text' => 'required|string|max:255',
+            'type' => [
                 'required',
-                Rule::in(['active', 'inactive']),
-            ]
+                Rule::in(['text', 'select', 'rating']),
+            ],
         ];
     }
 }

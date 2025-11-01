@@ -26,9 +26,7 @@ class StoreSurveyRequest extends FormRequest
             'title' => 'required|string|max:255',
             'description' => 'nullable|string',
             'status' => [
-                'sometimes',
                 'required',
-                'string',
                 Rule::in(['active', 'inactive']),
             ],
         ];

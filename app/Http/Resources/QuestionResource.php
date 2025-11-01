@@ -19,6 +19,7 @@ class QuestionResource extends JsonResource
             'id' => $this->id,
             'text' => $this->text,
             'type' => $this->type,
+            'survey_id' => $this->survey_id,
         ];
     }
 }
