@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Events\SurveyAnswered;
+use App\Listeners\ClearSurveyReportCache;
 use App\Listeners\SendSurveyAnsweredNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Event;
@@ -17,6 +18,7 @@ class EventServiceProvider extends ServiceProvider
     protected $listen = [
         SurveyAnswered::class => [
             SendSurveyAnsweredNotification::class,
+            ClearSurveyReportCache::class,
         ],
     ];
 

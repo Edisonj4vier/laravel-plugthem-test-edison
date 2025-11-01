@@ -15,9 +15,13 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+        $this->call([
+            UserSeeder::class,
+            SurveySeeder::class,
+            QuestionSeeder::class,
+            AnswerSeeder::class,
         ]);
+
+        $this->command->info('Base de datos poblada exitosamente!');
     }
 }
