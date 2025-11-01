@@ -68,7 +68,7 @@ class AuthController extends Controller
      * POST /api/logout
      */
     public function logout(Request $request){
-        $request->user()->tokens->delete();
+        $request->user()->tokens()->delete();
 
         return $this->successResponse(null, 'Cierre de sesion exitoso');
     }

@@ -58,7 +58,7 @@ class User extends Authenticatable
     /**
      * Un usuario ha dado muchas respuestas..
      */
-    public function response(){
-        return $this->hasMany(Response::class);
+    public function responses(){
+        return $this->hasMany(Answer::class);
     }
 }
