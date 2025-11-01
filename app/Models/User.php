@@ -58,7 +58,7 @@ class User extends Authenticatable
     /**
      * Un usuario ha dado muchas respuestas..
      */
-    public function responses(){
+    public function answers(){
         return $this->hasMany(Answer::class);
     }
 }

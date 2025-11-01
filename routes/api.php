@@ -3,6 +3,7 @@
 use App\Http\Controllers\AnswerController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\QuestionController;
+use App\Http\Controllers\ReportController;
 use App\Http\Controllers\SurveyController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -21,7 +22,7 @@ Route::middleware('auth:sanctum')->group(function(){
     Route::apiResource('surveys', SurveyController::class);
     Route::apiResource('surveys.questions', QuestionController::class)->shallow();
     Route::post('/surveys/{survey}/answer', [AnswerController::class, 'store']);
-    //Route::get('/reports/survey/{survey}', [ReportController::class, 'show']);
+    Route::get('/reports/survey/{survey}', [ReportController::class, 'show']);
 
 });
 
